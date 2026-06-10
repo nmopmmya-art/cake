@@ -1296,6 +1296,144 @@ h3{
         flex-direction: column;
         align-items: center;
     }
+    @media (max-width: 768px){
+
+    /* Hero */
+    .color{
+        min-height: 700px;
+    }
+
+    .header{
+        padding-top: 30px;
+    }
+
+    .title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .subtitle{
+        font-size: 14px;
+        width: 90%;
+    }
+
+    /* البحث + الأزرار */
+    .top-bar{
+        width: 95%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .search{
+        width: 100%;
+        max-width: 100%;
+        order: 1;
+    }
+
+    .top-icons,
+    .M{
+        width: 50px;
+        height: 50px;
+    }
+
+    .top-icons img,
+    #darkModeBtn{
+        width: 24px;
+        height: 24px;
+    }
+
+    /* الأقسام الدائرية */
+    .sor{
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .item img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .item p{
+        font-size: 12px;
+    }
+
+    /* المنتجات */
+    .pro{
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .cop{
+        width: 95%;
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .cop img{
+        width: 100%;
+        max-width: 250px;
+        height: 250px;
+    }
+
+    /* بانر البان كيك */
+    .pancake-banner{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .pancake-banner img{
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+    }
+
+    /* منتجات البان كيك */
+    .pancake-item{
+        width: 95%;
+        max-width: 320px;
+    }
+
+    .pancake-item img{
+        width: 100%;
+        max-width: 240px;
+        height: 240px;
+    }
+
+    /* About */
+    .inf{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .inf h2{
+        font-size: 28px;
+    }
+
+    /* السلة */
+    #cartBox{
+        padding: 15px;
+    }
+
+    #cartList li{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* التواصل */
+    #contactBox{
+        width: 90%;
+        right: 5%;
+    }
+
+    /* العداد */
+    .countdown{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
 
     .search {
         width: 100%;
