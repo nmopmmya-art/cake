@@ -1629,3 +1629,22 @@ h3{
 .dark .soon-content p{
     color:#fff;
 }
+/* منتجات الأصناف في الدارك مود */
+.dark .Foryou .vf,
+.dark .Foryou .birth,
+.dark .Foryou .Event,
+.dark .Foryou .forr{
+    background:#4b0223;
+    color:#fff;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.dark .Foryou p,
+.dark .Foryou h3{
+    color:#fff;
+}
+
+.dark .Foryou .btn-back{
+    background:#350116;
+    color:#fff;
+}
