@@ -220,22 +220,39 @@ Add.forEach(btn => {
     });
 
 });
-let darkBtn = document.getElementById("darkModeBtn");
+const darkBtn = document.getElementById("darkModeBtn");
 
+/* تحميل الوضع المحفوظ */
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark");
+}
+
+/* تغيير الوضع */
 darkBtn.addEventListener("click", function(){
 
     document.body.classList.toggle("dark");
 
+    if(document.body.classList.contains("dark")){
+        localStorage.setItem("theme", "dark");
+    }else{
+        localStorage.setItem("theme", "light");
+    }
+
 });
-let info=document.getElementById("info");
-let inf =document.querySelector(".inf");
-info.addEventListener("click", function(){
+let infoBtn = document.getElementById("info");
+let inf = document.querySelector(".inf");
+
+infoBtn.addEventListener("click", function(){
 
     mainContent.style.display = "none";
 
     inf.style.display = "block";
 
+    contactBox.style.display = "none";
+    cartBox.style.display = "none";
+
 });
+
 let backInfo = document.getElementById("backInfo");
 backInfo.addEventListener("click", function(){
 
@@ -477,7 +494,7 @@ document.getElementById("backPancake")
     document.querySelector(".color").style.display = "block";
     document.querySelector(".pro").style.display = "flex";
 
-    currentView = "home";
+   
 
 
 
@@ -495,7 +512,7 @@ if (currentView === "pancake") {
         if(txt) txt.style.display = "block";
         if(det) det.style.display = "none";
 
-    });
+    }); currentView = "home";
 
 
 }
